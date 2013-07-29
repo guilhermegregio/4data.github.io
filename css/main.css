@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 /*
 /*****************************************************************************/
 .main{
+	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
 }
@@ -56,8 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 /*
 /*****************************************************************************/
 #nav{
-	display: none;
-	z-index: 1;
+	z-index: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -157,8 +157,32 @@ h1, h2, h3, h4, h5, h6 {
 /*
 /*****************************************************************************/
 #page{
+	background-color: #fff;
+	z-index: 1;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+#page.active {
+	-webkit-transform: translateX(90%);
+	-moz-transform: translateX(90%);
+	-ms-transform: translateX(90%);
+	-o-transform: translateX(90%);
+	transform: translateX(90%);
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 .logo{
@@ -186,13 +210,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contextMenuIcon{
+
 	text-shadow: none;
 	position: absolute;
 	top: 10px;
 	left: 5px;
 	width: 50px;
 	height: 100%;
-	list-style-type: circle;
+	list-style: none;
 	color: #666;
 }
 
@@ -202,6 +227,10 @@ h1, h2, h3, h4, h5, h6 {
 	width: 20px;
 	border-radius: 5px;
 	background:#666;
+}
+
+.posts {
+	list-style: none;
 }
 
 .posts li{

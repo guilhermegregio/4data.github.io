@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Primeiro Coding Dojo"
-date:   2013-07-26  
+date:   2013-07-29
 categories: nodejs javascript dojo
 author:
   name: Guilherme Mangabeira

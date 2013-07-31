@@ -1,2 +1,17 @@
 name: 4data Labs
+title: 4data Labs
+timezone: America/Sao_Paulo
+
+url: 4data.github.io
+baseurl: /
+permalink: /:title/
+tags_path: /tags/
+archive_path: /archive/
+map_path: /sitemap/
+
+paginate: 5
+paginate_path: 'pagina:num'
+# For better related posts
+lsi: true
+
 pygments: true

@@ -18,7 +18,7 @@ Na noite do dia 26/17/2013, a equipe de desenvolvimento (4data) se juntou para p
 * **Linguagem:** [Javascript (Nodejs)][1]
 * **Problema:** [Matriz Espiral][2]
 * **Formato:** [Randori][3]
-* **Participantes:** [Diego Ronan Kulian][4], [Diogo Dias Rodrigues][5], [Guilherme Mangabeira Gregio][6], [Rafael Antonio Lucio][7], [Ricardo Mozart Lino][8]
+* **Participantes:** [Diego Ronan Kulian][4], [Diogo Dias Rodrigues][5], [Felipe Vicente][10], [Guilherme Mangabeira Gregio][6], [Rafael Antonio Lucio][7], [Ricardo Mozart Lino][8]
 * **Código:** [Github][9]
 
 A linguagem escolhida foi javascript com nodejs criamos o projeto como se fosse um modulo node:
@@ -33,7 +33,7 @@ A linguagem escolhida foi javascript com nodejs criamos o projeto como se fosse 
 
 O problema foi escolhido na hora pelos participantes no site Dojo Puzzles. Decidiu-se pelo problema da Matriz Espiral.
 
-Várias ideias surgiram para solucionar o problema que quase foi alcança. Os maiores problemas foram pela pouca experiência com javascript.
+Várias ideias surgiram para solucionar o problema que quase foi alcançada. Os maiores problemas foram pela pouca experiência com javascript.
 
 [1]: http://nodejs.org
 [2]: http://dojopuzzles.com/problemas/exibe/matriz-espiral/
@@ -44,3 +44,4 @@ Várias ideias surgiram para solucionar o problema que quase foi alcança. Os ma
 [7]: https://github.com/RafaelLucio
 [8]: https://github.com/ricardo-lino
 [9]: https://github.com/4data/dojos
+[10]: https://github.com/felipetv2

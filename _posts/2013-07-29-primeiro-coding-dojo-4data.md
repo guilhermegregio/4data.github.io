@@ -9,6 +9,7 @@ author:
   url: http://gregio.net
   github: guilhermegregio
   twitter: gregionet
+tags : [nodejs, node, javascript, dojo]
 ---
 
 Na noite do dia 26/17/2013, a equipe de desenvolvimento (4data) se juntou para participar do seu 1º Coding Dojo. Foi o primeiro dojo da empresa e o primeiro dojo da equipe.

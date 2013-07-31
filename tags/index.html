@@ -1,13 +1,24 @@
 ---
 layout: default
+tags: [Node, Dojo, Java, Javascript]
 ---
 <h1>Tags</h1>
-	
 
 <div class="post">
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae error animi dolorem eius unde reprehenderit nemo blanditiis eos tempore totam. Recusandae, iure sint voluptatum nobis adipisci quam asperiores qui eos voluptatibus repellat ipsam amet vel corrupti officia iste dicta inventore labore molestiae quibusdam optio odio earum aspernatur dolor deleniti dignissimos illo possimus ducimus modi impedit hic ratione ea magnam ad. Aspernatur, rem, recusandae. Veritatis, dolor, error, mollitia, nam inventore suscipit quod nemo neque perferendis aliquid iusto tempore eligendi doloribus aut commodi tenetur iure qui odio doloremque pariatur molestiae dolorum laborum. Corporis, optio, ipsa, minima necessitatibus suscipit voluptatem laudantium doloribus dolorum maxime eius ab nam porro quis quisquam dolorem eos eveniet. Excepturi, fugiat, obcaecati, quia sequi ut perferendis quas impedit voluptas aliquid qui nobis neque incidunt quod iste harum dolores fugit illum quaerat corrupti aut aperiam veniam modi beatae tempora dolore quos deserunt corporis repellat aliquam voluptates temporibus vero provident totam accusamus saepe praesentium enim tenetur voluptatem eum placeat! Illo, officia, qui repudiandae provident dolorum perspiciatis vel a earum animi nostrum in quaerat et doloribus veritatis delectus id explicabo ullam hic beatae deleniti non dolore aliquid sint rerum harum veniam amet soluta vero voluptatem totam. Nemo, maiores, distinctio, ipsum dolorum consectetur culpa similique porro ex molestiae iusto debitis quis facere cupiditate repellendus soluta nostrum eos ullam tempore eaque architecto repudiandae adipisci quas saepe nulla voluptate inventore vero quia fugiat doloremque autem sequi deleniti at sit. Eius, minima, aliquam accusantium repudiandae ipsam quibusdam minus sint tempora modi odio illum deserunt dolorem qui!</p>
+	<article class="content">
+		<ul class="tag_box inline">
+			{% for tag in site.tags %}
+			<li><a href="{{ site.tags_path }}#{{ tag[0] }}" class="label">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+			{% endfor %}
+		</ul>
 
-	<h1>EQUIPE</h1>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, deleniti velit saepe perspiciatis possimus enim error repellat at veniam voluptatibus quibusdam explicabo sed voluptas excepturi beatae accusantium necessitatibus corrupti provident consectetur corporis molestias magnam ea sequi aspernatur dolorem ullam qui obcaecati minima esse optio. Id, fugiat, deleniti, voluptatem, consequatur repellendus odit similique laboriosam dolorum iusto labore dolore eveniet natus consequuntur autem cum. Culpa, vero modi vitae odio ratione atque illo cumque fuga aliquid aspernatur! Molestiae, facere, numquam porro hic quos quaerat eveniet cum dolore corrupti repudiandae. Alias, optio, aperiam, nostrum impedit magni blanditiis non quia modi odio laudantium soluta qui consectetur eaque obcaecati nisi nobis cum. Officiis, alias, mollitia aut veritatis numquam quas beatae quam laborum sint ipsum illo nemo et vitae provident iure sed porro vel animi voluptatem deleniti vero tempora illum odio saepe tempore temporibus cum expedita eius iste omnis placeat enim obcaecati dolor ut sit molestiae eaque quae quisquam quos asperiores reiciendis dignissimos officia libero incidunt dolorum praesentium. At, laboriosam, cupiditate aspernatur nostrum maxime eligendi earum odit nemo voluptatem error ad esse culpa dolorem officia ratione rerum mollitia autem impedit voluptatibus vel consequuntur excepturi nesciunt laborum non ipsa alias sed suscipit optio magni repudiandae a obcaecati atque soluta maiores dolore deserunt delectus. Adipisci, debitis, iste, eius, omnis id quod nostrum consequatur suscipit totam accusantium accusamus nesciunt nihil quia quos perferendis necessitatibus pariatur? Recusandae, rem, ipsum, eaque placeat nostrum sapiente omnis quod quasi accusamus atque harum eum perferendis saepe nihil quos ipsa animi veritatis aperiam excepturi et aliquid ducimus illo deleniti id exercitationem magni veniam natus distinctio voluptate dignissimos necessitatibus delectus facilis ratione molestias similique ad quae debitis illum aut obcaecati asperiores non eveniet corrupti inventore ut fugit. Iste, esse veniam perspiciatis modi ullam nemo cumque nihil minus harum. Amet, explicabo cupiditate sit excepturi expedita totam ut voluptatem!</p>
+		{% for tag in site.tags %} 
+		<h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+		<ul>
+			{% for node in tag[1] %}
+			<li><a href="{{ node.url | remove:'index.html' }}">{{ node.title }}</a></li>
+			{% endfor %}
+		</ul>
+		{% endfor %}
+	</article>
 </div>
